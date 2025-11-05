@@ -73,4 +73,133 @@ body {
     gap: 1.5rem;
     padding: 1rem;
   }
+
+  .playlist-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    gap: 20px;
+    justify-content: center;
+  }
+  .playlist {
+    grid-column: span 6; /* each one takes 6 of 12 columns = 2 per row */
+    background: #1e1e1e;
+    border-radius: 12px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+  }
+
+  .playlist iframe {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .playlist:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #d510a1;
+  }
+
+  
+  .playlist h2 {
+    margin: 0 0 8px 0; /* remove extra top space and keep a small gap below */
+    font-size: 1.2rem; /* optional, adjust text size */
+  }
+  
+  
+  .dance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .gif-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center all items vertically */
+  }
+  
+  .pochacco {
+    width: 300px;           /* slightly bigger */
+    height: 300px;
+    border-radius: 50%;     /* circular GIF */
+    object-fit: cover;
+    box-shadow: 0 0 15px #d510a1;
+    margin-bottom: 20px;    /* space between GIF and button */
+  }
+  
+  #show-form {
+    display: none;           /* hide checkbox */
+  }
+  
+  .toggle-button {
+    display: block;
+    padding: 12px 25px;
+    background-color: #d510a1;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 250px;
+    margin-bottom: 15px;    /* space between button and form */
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .toggle-button:hover {
+    background-color: #a00d85;
+    transform: scale(1.05);
+  }
+  
+  .form-container {
+    display: none;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Show form when checkbox is checked */
+  #show-form:checked + .toggle-button + .form-container {
+    display: block;
+  }
+  
+  form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  form input::placeholder {
+    color: #aaa;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #d510a1;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: #a00d85;
+    transform: scale(1.05);
+  }
   
