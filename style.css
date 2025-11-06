@@ -22,14 +22,14 @@ body {
     text-decoration: underline;
   }
   
-  main {
-    padding: 2rem;
-  }
+h1 {
+  text-align: center;
+}
+  
   .grid-container {
     max-width: 1200px;
-    margin: 0 auto; /* centers the grid */
+    margin: 0 auto; 
   }
-  
   
 .grid {
     display: grid;
@@ -48,8 +48,8 @@ body {
   
   .card img {
     width: 100%;
-    height: 200px;         /* makes all images equal height */
-    object-fit: cover;     /* crops to fill box evenly */
+    height: 200px;        
+    object-fit: cover;     
     border-radius: 8px;
   }
   
@@ -59,7 +59,7 @@ body {
   }
   @media (max-width: 600px) {
     .card img {
-      height: 150px; /* smaller images on phones */
+      height: 150px;
     }
   
     .card h2 {
@@ -76,12 +76,12 @@ body {
 
   .playlist-container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr); /* 12 equal columns */
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     justify-content: center;
   }
   .playlist {
-    grid-column: span 6; /* each one takes 6 of 12 columns = 2 per row */
+    grid-column: span 6; 
     background: #1e1e1e;
     border-radius: 12px;
     text-align: center;
@@ -104,8 +104,8 @@ body {
 
   
   .playlist h2 {
-    margin: 0 0 8px 0; /* remove extra top space and keep a small gap below */
-    font-size: 1.2rem; /* optional, adjust text size */
+    margin: 0 0 8px 0; 
+    font-size: 1.2rem;
   }
   
   
@@ -119,20 +119,20 @@ body {
   .gif-and-button {
     display: flex;
     flex-direction: column;
-    align-items: center; /* center all items vertically */
+    align-items: center; 
   }
   
   .pochacco {
-    width: 300px;           /* slightly bigger */
+    width: 300px;         
     height: 300px;
-    border-radius: 50%;     /* circular GIF */
+    border-radius: 50%;    
     object-fit: cover;
     box-shadow: 0 0 15px #d510a1;
-    margin-bottom: 20px;    /* space between GIF and button */
+    margin-bottom: 20px;   
   }
   
   #show-form {
-    display: none;           /* hide checkbox */
+    display: none;           
   }
   
   .toggle-button {
@@ -144,7 +144,7 @@ body {
     cursor: pointer;
     text-align: center;
     max-width: 250px;
-    margin-bottom: 15px;    /* space between button and form */
+    margin-bottom: 15px;    
     font-weight: bold;
     transition: background 0.3s, transform 0.2s;
   }
@@ -164,7 +164,6 @@ body {
     text-align: center;
   }
   
-  /* Show form when checkbox is checked */
   #show-form:checked + .toggle-button + .form-container {
     display: block;
   }
@@ -186,9 +185,9 @@ body {
   
   .submit-button {
     display: block;
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px auto;
     background-color: #d510a1;
     color: white;
     border-radius: 10px;
