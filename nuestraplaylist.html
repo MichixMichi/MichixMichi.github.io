@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Playlist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+        <h1> Welcome to my Playlist!</h1>
+        <nav>
+          <a href="index.html">Trends</a>
+          <a href="artists.html">My Favorite Artists</a>
+          <a href="playlist.html">My Playlist</a>
+          <a href="nuestraplaylist.html">Nuestra Playlist</a>
+        </nav>
+ </header>
+
+    <div class="form-container">
+         <form class="playlist-form">
+            <h2>Send your song!</h2>
+            <input id="songName" placeholder="Song">
+            <input id="artist" placeholder="Artist">
+            <button type="button" onclick="guardarCancion()" id="guardar">Add</button>
+              
+        </form>
+
+    <div class="our-playlist">
+        <h1>Nuestra playlist</h1>
+        <ul id="ourPlaylist"></ul>
+         <button type="button" onclick="clearAll()" id="clear">Clear All</button>
+
+    </div>
+    </div>
+
+
+
+<script src="script.js"></script>
+
+
+    
+</body>
+</html>
